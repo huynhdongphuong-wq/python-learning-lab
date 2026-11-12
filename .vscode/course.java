@@ -20,7 +20,7 @@ public class course {
             System.out.println("Invalid maximum students");
         }
 
-        if (currentStudent > 0 || currentStudent < maxStudent) {
+        if (currentStudent > 0 && currentStudent < maxStudent) {
             this.currentStudent = currentStudent;
         } else {
             System.out.println("Invalid current number of students");
@@ -72,7 +72,7 @@ public class course {
     }
 
     public void setCurrentStudent(int currentStudent) {
-        if (currentStudent > 0 || currentStudent < maxStudent) {
+        if (currentStudent > 0 && currentStudent < maxStudent) {
             this.currentStudent = currentStudent;
         } else {
             System.out.println("Invalid current number of student.");
@@ -106,7 +106,7 @@ public class course {
         System.out.println("Course Name: " + courseName);
         System.out.println("Fee: " + fee);
         System.out.println("Maximum number Students: " + maxStudent);
-        System.out.println("Current numbers of Student");
+        System.out.println("Current numbers of Student: " + currentStudent);
     }
 }
 
